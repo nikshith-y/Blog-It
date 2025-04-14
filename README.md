@@ -1,4 +1,4 @@
-# Blog Platform
+# Blog It
 
 A simple blog platform for creating, editing, and deleting blog posts. This application runs entirely in the browser and uses localStorage to persist your blog posts.
 
