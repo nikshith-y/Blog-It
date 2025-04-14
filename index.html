@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog It</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog It</h1>
+            <div class="header-actions">
+                <button class="btn" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn" id="download-btn">
+                    <i class="fas fa-download"></i>
+                    Download All
+                </button>
+                <button class="btn primary" id="new-post-btn">
+                    <i class="fas fa-plus"></i>
+                    New Post
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <div id="posts-container">
+                <div id="no-posts-message" class="hidden">
+                    <i class="fas fa-pen-fancy fa-3x"></i>
+                    <p>No posts yet. Create your first post!</p>
+                </div>
+            </div>
+
+            <form id="post-form" class="hidden">
+                <div class="form-group">
+                    <label for="post-title">Title</label>
+                    <input type="text" id="post-title" placeholder="Enter post title" required>
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Content</label>
+                    <textarea id="post-content" placeholder="Write your post content here..." required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn danger" id="cancel-btn">
+                        <i class="fas fa-times"></i>
+                        Cancel
+                    </button>
+                    <button type="submit" class="btn primary" id="save-btn">
+                        <i class="fas fa-save"></i>
+                        Save Post
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <div id="toast" class="toast hidden">
+        <i class="fas"></i>
+        <span></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
